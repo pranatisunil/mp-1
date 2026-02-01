@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/projects.css">
+    <title>Projects | Calculator</title>
+</head>
+<body>
+
+    <div id="wrapper">
+        <header>
+            <h1>Pranati Sunil</h1>
+            <p> Boston, Massachusetts | +1(857)3403619 | pranati@bu.edu | <a href ="https://www.linkedin.com/in/pranatisunil/">linkedin.com/in/pranatisunil</a></p>
+        </header>
+        <div id="two-column">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="references.html">References</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="credits.html">Credits</a></li>
+                </ul>
+            </nav>
+
+            <main>
+                <div class="header">
+                    <img src="src/pranati.png" alt="Pranati's Calculator">
+                </div>
+
+                <div class="calculator">
+                    <label for="first">Give me a number:</label>
+                    <input id="first">
+
+                    <label for="second">Give me another number:</label>
+                    <input id="second">
+
+                    <div class="buttons">
+                        <button id="addBtn" onclick="doAdd()">+</button>
+                        <button id="subBtn" onclick="doSub()">-</button>
+                        <button id="multiBtn" onclick="doMulti()">*</button>
+                        <button id="divBtn" onclick="doDiv()">/</button>
+                        <button id="powBtn" onclick="doPow()">^</button>
+                        <button id="clearBtn" onclick="Clear()">Clear</button>
+                    </div>
+
+                    <h3 id="output"></h3>
+                </div>
+
+                <footer>
+                    <p>All rights reserved by Pranati Sunil &copy;</p>
+                    <a href="https://www.linkedin.com/in/pranatisunil/">Credits</a>
+                </footer>
+            </main>
+            <script src="projects.js"></script>
+    </body>
+    </html>

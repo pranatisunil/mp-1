@@ -1,0 +1,177 @@
+*{
+
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Times New Roman", serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: lavenderblush;
+}
+
+#wrapper {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    height:auto;
+
+}
+
+header, nav, main, footer {
+    padding: 1%;
+}
+header h1 {
+    margin: 0;
+    padding: 10px 0; /* optional, for breathing room */
+}
+header p {
+    margin: 0;
+}
+
+
+header {
+    background-color: #F6A6BB;
+    text-align: center;
+}
+
+nav  {
+    display: flex;
+    width: 30%;
+    text-align: center;
+    padding: 3%;
+    flex-direction:column;
+    background-color: powderblue;
+}
+nav {
+    display: flex;
+    width: 250px;
+    background-color: #F4BBC9;
+}
+
+
+nav ul {
+
+    display: flex;
+    flex-direction:column;
+    font-size: calc(2px + 10px);
+    list-style-type: none;
+    padding: 3%;
+    margin: auto ;
+    justify-content: space-around;
+
+}
+
+nav ul li {
+    width: 150px;
+    box-sizing: border-box;
+    margin: 10px auto;
+    padding: 15px 0;
+    border-style: groove;
+    border-width: thick;
+    border-color: cadetblue;
+    text-align: center;
+    background-color: white;
+}
+
+nav ul li a {
+    margin: auto ;
+}
+
+nav a{
+    text-decoration:none;
+    color:black;
+}
+main {
+    background-color: #F7D1D8;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding-bottom: 40px;
+}
+main h1 {
+    text-align: center;
+    padding: 1%;
+    margin: auto ;
+}
+main p {
+    border-style: groove;
+    border-width: thin;
+    border-color: coral;
+    text-align: center;
+    padding: 20px;
+    margin: 10px 0;
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+main ol {
+  list-style: none;
+ text-align: center;
+      width:90%;}
+.exp {
+    width: auto;
+}
+
+footer {
+    background-color: #F6A6BB;
+    text-align: center;
+}
+
+
+
+#two-column {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+}
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    #two-column {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+    nav{
+
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display:inline;
+        text-align: center;
+        background-color: lightsteelblue;
+    }
+    nav ul {
+        flex-direction: row;
+        width: auto;
+        background-color: lightsteelblue;
+        margin: auto ;
+        justify-content: space-around;
+        padding: 0;
+
+
+    }
+    nav ul li { padding: 0; }
+
+    main {
+        padding: 0;
+        flex-direction: column;
+        width: auto;
+
+    }}
+
+
+
