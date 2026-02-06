@@ -1,41 +1,29 @@
 *{
-
     margin: 0;
     box-sizing: border-box;
-
 }
 
-body {
-    font-family: "Times New Roman", serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: lavenderblush;
+/*Centering the page*/
+#wrapper{
+    width: 80vw;
+    margin: 0 auto;
 }
 
-#wrapper {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    height:auto;
-
-}
-
-header, nav, main, footer {
-    padding: 1%;
-}
-header h1 {
-    margin: 0;
-    padding: 10px 0;
-}
-header p {
-    margin: 0;
-}
-
-
+/*Header starts*/
 header {
+    padding: 1%;
     background-color: #F6A6BB;
+    color: black;
     text-align: center;
+}
+/*Header ends*/
+
+/*Two column container starts:*/
+
+#two-column{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 nav  {
@@ -85,65 +73,66 @@ nav a{
     text-decoration:none;
     color:black;
 }
-main {
-    background-color: #F7D1D8;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+
+main{
+    padding: 1% 2%;
+    height: 150vh;
+    text-align: center;
     width: 100%;
-    padding-bottom: 40px;
-}
-main h1 {
-    text-align: center;
-    padding: 1%;
-    margin: auto ;
-}
-main p {
-    border-style: groove;
-    border-width: thin;
-    border-color: coral;
-    text-align: center;
-    padding: 20px;
-    margin: 10px 0;
-    width: auto;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #F7D1D8;
 }
 
-main ol {
-  list-style: none;
- text-align: center;
-      width:90%;}
-.exp {
-    width: auto;
-}
-
-footer {
-    background-color: #F6A6BB;
-    text-align: center;
-}
-
-
-
-#two-column {
+#this-one{
     display: flex;
     flex-direction: row;
-    align-items: stretch;
+    justify-content: space-evenly;
+    align-items: center;
     width: 100%;
+    margin: 5% 0;
+}
+
+main p{
+    line-height: 100%;
+    font-size: calc(2px + 1.5vw);
+    padding: 2%;
+}
+
+main h3{
+    text-align: center;
+    margin: 2% 0;
+    font-size: calc(2px + 2vw);
+    color: maroon;
+}
+
+main img{
+    max-width: 40%;
 }
 
 
+footer{
+    background-color: #F6A6BB;
+    color: bisque;
+    padding: 1%;
+    text-align: center;
+}
 
+#time-date{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
 
+footer a{
+    color: bisque;
+}
 
-
-@media screen and (max-width: 600px) {
-
+@media  screen and (max-width: 750px) {
     #two-column {
         display: flex;
         flex-direction: column;
-        gap: 15px;
     }
-
 
     nav{
 
@@ -152,12 +141,12 @@ footer {
         margin: 0;
         display:inline;
         text-align: center;
-        background-color: lightsteelblue;
+        background-color: lightcoral;
     }
     nav ul {
         flex-direction: row;
         width: auto;
-        background-color: lightsteelblue;
+        background-color: lightcoral;
         margin: auto ;
         justify-content: space-around;
         padding: 0;
@@ -166,12 +155,17 @@ footer {
     }
     nav ul li { padding: 0; }
 
+    #this-one{
+        flex-direction: column;
+    }
+
+    header{
+        text-align: center;
+    }
+
     main {
         padding: 0;
         flex-direction: column;
         width: auto;
 
     }}
-
-
-

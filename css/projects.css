@@ -136,12 +136,11 @@ footer {
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
 
     #two-column {
         display: flex;
         flex-direction: column;
-        gap: 15px;
     }
 
 
@@ -152,12 +151,12 @@ footer {
         margin: 0;
         display:inline;
         text-align: center;
-        background-color: lightsteelblue;
+        background-color: lightcoral;
     }
     nav ul {
         flex-direction: row;
         width: auto;
-        background-color: lightsteelblue;
+        background-color: lightcoral;
         margin: auto ;
         justify-content: space-around;
         padding: 0;
